@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.saiprashanth.mainproject.signupPage">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="User Registration"
+        android:id="@+id/userRegistration"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="32sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Name*: "
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sname"
+        android:textSize="19sp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignBottom="@+id/textView" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Password*"
+        android:id="@+id/password"
+
+        android:layout_below="@+id/Name"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/SUserPassword"
+        android:layout_toEndOf="@+id/password"
+        android:maxLength="20"
+        android:textSize="19sp"
+
+        android:layout_alignTop="@+id/password"
+        android:layout_alignBottom="@+id/password" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Confirm Password*"
+        android:id="@+id/confirmPass"
+        android:layout_below="@+id/password"
+        android:layout_alignParentStart="true"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:maxLength="20"
+        android:id="@+id/SconfirmPass"
+        android:layout_toEndOf="@+id/Name" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="19sp"
+        android:id="@+id/Age"
+        android:layout_above="@+id/UserPassword"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/UserPassword" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SAge"
+        android:textSize="19sp"
+        android:layout_above="@+id/UserPassword"
+        android:layout_alignStart="@+id/UserPassword"
+        android:layout_alignTop="@+id/Age"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_toStartOf="@+id/editText" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Phone*"
+        android:textSize="19sp"
+        android:id="@+id/Phone"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SEnteredPhone"
+        android:layout_below="@+id/Name"
+        android:layout_alignStart="@+id/EnterAge"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_above="@+id/EnterAge"
+        android:onClick="homeRedirect" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Address*"
+        android:textSize="19sp"
+        android:id="@+id/Address"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+         />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SEnteredAddress"
+        android:layout_alignBottom="@+id/Address"
+        android:layout_alignStart="@+id/UserPassword"
+        android:layout_alignTop="@+id/Address"
+        android:layout_alignEnd="@+id/UserPassword" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Zip Code*"
+        android:id="@+id/Zipcode"
+        android:textSize="19sp"
+        android:layout_below="@+id/Address"
+        android:layout_alignParentStart="true"
+         />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SZipcode"
+        android:layout_alignBottom="@+id/SZipcode"
+        android:layout_alignEnd="@+id/EnteredAddress"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_toEndOf="@+id/confirmPass" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Security question*"
+            android:id="@+id/secque"
+            android:textSize="19sp"
+            android:layout_below="@+id/Address"
+            android:layout_alignParentStart="true"
+            />
+
+        <EditText
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ssecque"
+            android:layout_alignBottom="@+id/SZipcode"
+            android:layout_alignEnd="@+id/EnteredAddress"
+            android:layout_toEndOf="@+id/confirmPass" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Security Answer*"
+            android:id="@+id/securityAnswer"
+            android:textSize="19sp"
+            android:layout_below="@+id/Address"
+            android:layout_alignParentStart="true"
+            />
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sanswer"
+            android:layout_alignBottom="@+id/SZipcode"
+            android:layout_alignEnd="@+id/EnteredAddress"
+            android:layout_toEndOf="@+id/confirmPass" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:id="@+id/submit"
+        android:onClick="loginRedirect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp" />
+
+</LinearLayout>

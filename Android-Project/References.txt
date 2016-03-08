@@ -1,0 +1,6 @@
+1) http://techblogon.com/android-login-registration-screen-with-sqlite-database-example/
+2) Login and Signup - SQLite Database by Tech Academy- YouTube
+3) http://karanbalkar.com/2013/05/tutorial-28-implement-sha1-and-md5-hashing-in-android/
+4) http://stackoverflow.com/questions/1944656/android-global-variable
+5) https://www.youtube.com/watch?v=hB3AqKy8QME
+6) http://stackoverflow.com/questions/5483560/how-to-call-an-activity-class-in-onbackpressed-android
